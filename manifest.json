@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "国家中小学智慧教育平台 - 电子教材一键下载助手",
+  "version": "1.0.2",
+  "description": "在智慧教育平台教材列表与详情页旁增加下载链接，自动读取登录凭证并一键下载对应 PDF 电子课本。",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://basic.smartedu.cn/*",
+    "*://*.cbern.com.cn/*",
+    "*://*.ykt.cbern.com.cn/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SmartEdu 教材下载助手",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://basic.smartedu.cn/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

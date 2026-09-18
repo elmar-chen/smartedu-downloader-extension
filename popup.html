@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 320px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f8f9fa;
+      color: #24292f;
+      font-size: 13px;
+    }
+
+    .header {
+      background: #107c41;
+      color: #fff;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-icon {
+      font-size: 20px;
+    }
+
+    .header-title {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .content {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+
+    .card-title {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #57606a;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .status-ok {
+      color: #107c41;
+    }
+
+    .status-warn {
+      color: #d48806;
+    }
+
+    .token-box {
+      margin-top: 6px;
+      background: #f6f8fa;
+      border: 1px solid #eaecef;
+      border-radius: 4px;
+      padding: 6px 8px;
+      font-family: monospace;
+      font-size: 11px;
+      word-break: break-all;
+      color: #666;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 12.5px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid #d0d7de;
+      background: #fff;
+      color: #24292f;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn:hover {
+      background: #f3f4f6;
+    }
+
+    .btn-primary {
+      background: #107c41;
+      color: #fff;
+      border-color: #107c41;
+    }
+
+    .btn-primary:hover {
+      background: #0b5a2f;
+      color: #fff;
+    }
+
+    .footer {
+      padding: 8px 16px 12px;
+      font-size: 11px;
+      color: #8c8c8c;
+      text-align: center;
+      border-top: 1px solid #eaecef;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="header-icon">📥</div>
+    <div>
+      <div class="header-title">SmartEdu 教材下载助手</div>
+      <div style="font-size: 11px; opacity: 0.85;">智慧教育平台电子课本插件</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Status Card -->
+    <div class="card">
+      <div class="card-title">🔑 认证凭证状态</div>
+      <div id="statusContainer">
+        <div class="status-badge status-warn">
+          <span>⏳</span> 正在检测登录凭证...
+        </div>
+      </div>
+      <div class="token-box" id="tokenBox" style="display:none;"></div>
+    </div>
+
+    <!-- Instruction Card -->
+    <div class="card">
+      <div class="card-title">💡 使用说明</div>
+      <ul style="padding-left: 18px; font-size: 12px; line-height: 1.6; color: #57606a;">
+        <li>登录并打开 <b>basic.smartedu.cn/elecEdu</b> 或 <b>/tchMaterial</b>。</li>
+        <li>插件会自动在每一本教材卡片下方增加 <b>“下载”</b> 按钮。</li>
+        <li>点击后自动读取签名并开始下载高清 PDF。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    智慧教育平台教材镜像系统 v1.0
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

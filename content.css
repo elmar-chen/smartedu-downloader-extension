@@ -1,0 +1,116 @@
+/* content.css - Styles for SmartEdu Textbook Downloader Extension */
+
+.smartedu-dl-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  padding: 2px 8px !important;
+  margin-left: 10px !important;
+  margin-right: 4px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  color: #0e6b37 !important;
+  background: none !important;
+  border: 1px solid #0e6b37 !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 1px 3px rgba(16, 124, 65, 0.25) !important;
+  user-select: none !important;
+  z-index: 10 !important;
+  vertical-align: middle !important;
+  white-space: nowrap;
+}
+
+.smartedu-dl-btn:hover {
+  /* background: linear-gradient(135deg, #0b5a2f 0%, #107c41 100%) !important;
+  color: #ffffff !important; */
+  box-shadow: 0 2px 6px rgba(16, 124, 65, 0.4) !important;
+  transform: translateY(-1px) !important;
+}
+
+.smartedu-dl-btn:active {
+  transform: translateY(0) !important;
+}
+
+.smartedu-dl-btn.smartedu-loading {
+  background: #faad14 !important;
+  border-color: #d48806 !important;
+  cursor: wait !important;
+  pointer-events: none !important;
+}
+
+.smartedu-dl-btn.smartedu-success {
+  background: #52c41a !important;
+  border-color: #389e0d !important;
+}
+
+.smartedu-dl-btn.smartedu-error {
+  background: #ff4d4f !important;
+  border-color: #d9363e !important;
+}
+
+/* Detail Page Title Download Button */
+.smartedu-detail-dl-btn {
+  margin-left: 14px !important;
+  margin-right: 6px !important;
+  padding: 4px 12px !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  vertical-align: middle !important;
+  display: inline-flex !important;
+  border-radius: 4px !important;
+  box-shadow: 0 1px 4px rgba(16, 124, 65, 0.2) !important;
+}
+
+/* Detail Page Floating Action Button */
+.smartedu-detail-float-btn {
+  position: fixed !important;
+  right: 32px !important;
+  bottom: 80px !important;
+  z-index: 99999 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 10px 18px !important;
+  background: #107c41 !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  border-radius: 24px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  border: 2px solid #ffffff !important;
+  text-decoration: none !important;
+}
+
+.smartedu-detail-float-btn:hover {
+  background: #0b5a2f !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Toast Message */
+.smartedu-toast {
+  position: fixed !important;
+  top: 24px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 100000 !important;
+  background: rgba(36, 41, 47, 0.92) !important;
+  color: #ffffff !important;
+  padding: 10px 20px !important;
+  border-radius: 6px !important;
+  font-size: 13.5px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: opacity 0.3s ease !important;
+  pointer-events: none !important;
+}
