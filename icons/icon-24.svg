@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="bg24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#023a2f" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+    <linearGradient id="gold24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Jade Background -->
+  <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="5.5" fill="url(#bg24)" stroke="#34D399" stroke-width="0.8" stroke-opacity="0.4"/>
+
+  <!-- Golden Auspicious Cloud Base with Ruyi Lobes -->
+  <path d="M 3.5 19 C 5 17, 8.5 18, 12 19.5 C 15.5 18, 19 17, 20.5 19 C 21.5 20, 20.5 22, 18.5 22 C 15.5 22.5, 8.5 22.5, 5.5 22 C 3.5 22, 2.5 20, 3.5 19 Z" fill="url(#gold24)" />
+  <circle cx="3.5" cy="18" r="1.8" fill="#FBBF24" />
+  <circle cx="20.5" cy="18" r="1.8" fill="#FBBF24" />
+
+  <!-- Open Book (Crisp White with Jade Cover Base) -->
+  <path d="M 3.5 14.5 C 6.5 13.5, 9.5 14.5, 12 16 C 14.5 14.5, 17.5 13.5, 20.5 14.5 L 20.5 18.5 C 17.5 17.5, 14.5 18.5, 12 20 C 9.5 18.5, 6.5 17.5, 3.5 18.5 Z" 
+        fill="#FFFFFF" />
+  <line x1="12" y1="16" x2="12" y2="20" stroke="#94A3B8" stroke-width="0.8" />
+
+  <!-- Download Arrow: Solid White with high contrast, ultra sharp -->
+  <path d="M 9.5 2.5 
+           L 14.5 2.5 
+           L 14.5 8 
+           L 18.5 8 
+           L 12 14.5 
+           L 5.5 8 
+           L 9.5 8 Z" 
+        fill="#FFFFFF" />
+  <!-- Arrow Mint Core Line -->
+  <line x1="12" y1="4" x2="12" y2="10" stroke="#059669" stroke-width="1.2" stroke-linecap="round" />
+</svg>

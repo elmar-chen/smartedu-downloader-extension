@@ -5,7 +5,10 @@
   "description": "在智慧教育平台教材列表与详情页旁增加下载链接，自动读取登录凭证并一键下载对应 PDF 电子课本。",
   "icons": {
     "16": "icons/icon-16.png",
+    "24": "icons/icon-24.png",
+    "32": "icons/icon-32.png",
     "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
     "128": "icons/icon-128.png"
   },
   "permissions": [
@@ -25,6 +28,8 @@
     "default_title": "SmartEdu 教材下载助手",
     "default_icon": {
       "16": "icons/icon-16.png",
+      "24": "icons/icon-24.png",
+      "32": "icons/icon-32.png",
       "48": "icons/icon-48.png",
       "128": "icons/icon-128.png"
     }
