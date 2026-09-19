@@ -6,7 +6,7 @@ This Privacy Policy explains how the **SmartEdu Textbook Downloader** (国家中
 
 ## 1. Information Collection and Storage
 - **No Personal Data Collection**: This extension does not collect, record, or track any personally identifiable information (PII), browsing history, or analytics data.
-- **Local Session Credentials**: In order to sign authorized download requests for educational textbooks, the extension reads the temporary session tokens (ccess_token and mac_key) stored in the browser's localStorage solely on asic.smartedu.cn.
+- **Local Session Credentials**: In order to sign authorized download requests for educational textbooks, the extension reads the temporary session tokens (access_token and mac_key) stored in the browser's localStorage solely on basic.smartedu.cn.
 - **Local Cache**: Credentials are kept entirely within the browser's local sandbox (chrome.storage.local) and are never transmitted to any third-party servers, remote analytics, or external databases.
 
 ## 2. Network Requests
@@ -16,7 +16,7 @@ This Privacy Policy explains how the **SmartEdu Textbook Downloader** (国家中
 ## 3. Permissions Justification
 - downloads: Required to save the requested textbook PDF files to the user's local disk.
 - storage: Required to temporarily store user session tokens within the local extension sandbox.
-- host_permissions (asic.smartedu.cn, *.cbern.com.cn): Required to inject download action triggers and retrieve official metadata and resource streams.
+- host_permissions (basic.smartedu.cn, *.cbern.com.cn): Required to inject download action triggers and retrieve official metadata and resource streams.
 
 ## 4. Contact and Feedback
 If you have questions, feedback, or concerns regarding this extension, please file an issue on the official GitHub repository:
